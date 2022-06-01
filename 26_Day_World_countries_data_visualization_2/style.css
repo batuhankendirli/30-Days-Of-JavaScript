@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* can not style placeholder in JavaScript */
+input::placeholder {
+  text-align: center;
+}
