@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 500;
+  letter-spacing: 20px;
+  color: #343434;
+  margin-bottom: 30px;
+}
+
+.titles {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #eddfde;
+  font-size: 24px;
+  color: #343434;
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.title {
+  animation-name: leftToRight;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 2;
+}
+
+strong {
+  color: #343434;
+}
+.courses-wrapper {
+  display: flex;
+  gap: 100px;
+  padding: 20px 40px;
+}
+
+.courses-wrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 300px;
+  padding: 80px 30px;
+  border: 1px solid #eddfde;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.courses-wrapper div:hover {
+  transform: scale(1.1);
+  background-color: #eddfde;
+}
+
+@keyframes techFadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tech {
+  animation-name: techFadeOut;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
