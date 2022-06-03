@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #343434;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+}
+
+.add-player-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input,
+.add {
+  border: none;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 17px;
+  border: 1px solid #e5c9c5;
+  transition: all 0.3s;
+}
+.add {
+  background-color: #e5c9c5;
+  padding: 14px 25px;
+  color: white;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+.add:hover {
+  cursor: pointer;
+  border: 1px solid #e5c9c5;
+  background-color: white;
+  color: #e5c9c5;
+}
+input:focus {
+  outline: none;
+  border: 1px solid red;
+}
+
+.warning {
+  color: red;
+  font-weight: 900;
+  display: none;
+}
+
+.players-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  background-color: #e5c9c5;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.full-name,
+.country,
+.score {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.full-name-date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date {
+  font-size: 14px;
+  color: #807f8e;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.delete,
+.plus-five,
+.minus-five {
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.delete:hover,
+.plus-five:hover,
+.minus-five:hover {
+  background-color: #def4b3;
+  cursor: pointer;
+}
+.delete {
+  color: red;
+}
+
+.full-name-date,
+.country,
+.score,
+.buttons {
+  flex: 1;
+}
