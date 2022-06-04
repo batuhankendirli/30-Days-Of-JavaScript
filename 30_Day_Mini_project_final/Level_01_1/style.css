@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat';
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 15px 0;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.title,
+.feedback {
+  color: rgb(255, 165, 0);
+}
+
+.feedback {
+  display: none;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.feedback {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.search-area {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.search-input {
+  border: 1px solid #f0f0f0;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  width: 60%;
+  color: rgb(255, 165, 0);
+  font-family: inherit;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: rgb(255, 165, 0);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 0;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(230, 149, 0);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+.btn-chart {
+  color: rgb(255, 165, 0);
+  font-size: 35px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.btn-chart::before {
+  content: '';
+  height: 2px;
+  background-color: rgb(255, 165, 0);
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.btn-chart:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.btn-chart:active {
+  transform: scale(1);
+}
+
+.btn-chart:hover.btn-chart::before {
+  width: 100%;
+}
+
+.countries-display {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  padding: 20px 0;
+  justify-content: space-around;
+}
+
+.country-card {
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  width: 190px;
+  flex-direction: column;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.country-card:hover {
+  transform: scale(1.03);
+}
+
+.flag {
+  pointer-events: none;
+  width: 128px;
+  margin: 0 auto;
+}
+
+.country-name {
+  color: rgb(255, 165, 0);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.country-info {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.countries-graph,
+.languages-graph {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 30px 0 100px;
+  background-color: #f0f0f0;
+}
+
+.graph-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 10px 0;
+  position: relative;
+}
+
+.graph-buttons-wrapper::before {
+  content: '';
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.46);
+  height: 2px;
+  position: absolute;
+  top: 25px;
+}
+
+.graph-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-buttons button {
+  text-transform: uppercase;
+  background-color: rgb(255, 165, 0);
+  width: 120px;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+.graph-buttons button:hover {
+  background-color: rgb(230, 149, 0);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.graph-buttons button:active {
+  transform: scale(1);
+}
+
+.graph-description {
+  font-size: 14px;
+}
+
+.country {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.graph-name {
+  width: 10%;
+}
+
+.graph-percentage {
+  width: 70%;
+}
+
+.color {
+  display: block;
+  border-radius: 3px;
+  height: 30px;
+  background-color: rgb(255, 165, 0);
+}
+
+.graph-population {
+  width: 10%;
+}
+
+.footer {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px 0;
+  color: rgb(255, 165, 0);
+}
+
+.go-top {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 165, 0);
+  width: 64px;
+  height: 64px;
+  transition: all 0.3s;
+}
+
+.go-top:hover {
+  box-shadow: 1px 1px 20px 2px rgba(51, 51, 51, 0.2);
+  background-color: rgb(255, 165, 0);
+  border: 1px solid rgb(255, 165, 0);
+  color: white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.go-top:active {
+  box-shadow: 1px 1px 15px 2px rgba(51, 51, 51, 0.45);
+  transform: scale(1);
+}
+
+.go-top i {
+  transition: transform 0.3s;
+}
+
+.go-top:hover i {
+  transform: translateY(-3px);
+}

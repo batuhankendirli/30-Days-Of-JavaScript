@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>30DaysOfJavaScript - Day 30</title>
+  </head>
+  <body>
+    <header>
+      <h3 class="title">World Countries Data</h3>
+      <p class="description">
+        Currently we have <span class="total-countries"></span> countries
+      </p>
+      <p class="feedback">
+        <i> <span class="number"></span> satisfied the search criteria </i>
+      </p>
+    </header>
+    <div class="search-area">
+      <input
+        type="text"
+        placeholder="Search countries by name, city and languages"
+        class="search-input"
+      />
+      <div class="buttons">
+        <button class="btn btn-name">
+          Name
+          <span class="name-arrow"></span>
+        </button>
+        <button class="btn btn-capital">
+          Capital <span class="capital-arrow"></span>
+        </button>
+        <button class="btn btn-population">
+          Population <span class="population-arrow"></span>
+        </button>
+        <span class="btn-chart">
+          <i class="fa-solid fa-chart-column"></i>
+        </span>
+      </div>
+    </div>
+    <div class="countries-display"></div>
+    <div class="graph-buttons-wrapper">
+      <div class="graph-buttons">
+        <button class="population">Population</button>
+        <button class="languages">Languages</button>
+      </div>
+      <p class="graph-description">10 Most populated countries in the world</p>
+    </div>
+    <div class="countries-graph"></div>
+    <div class="languages-graph"></div>
+    <footer class="footer">
+      <p class="developer-name">Developed by <span>Batuhan Kendirli</span></p>
+      <span class="go-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </span>
+    </footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

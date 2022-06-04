@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>30DaysOfJavaScript - Day 30</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Validating Web Forms</h1>
+      <div class="form-wrapper">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <p class="first-name-error">
+          First name must be alphanumeric and contain 3 - 16 characters
+        </p>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <p class="last-name-error">
+          Last name must be alphanumeric and contain 3 - 16 characters
+        </p>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <p class="email-error">
+          Email must be a valid address, e.g. example@example.com
+        </p>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <p class="password-error">
+          Password must be alphanumeric (@, _ and - are also allowed) and
+          between 6 - 20 characters
+        </p>
+
+        <label for="telephone">Telephone</label>
+        <input type="text" id="telephone" />
+        <p class="telephone-error">
+          A valid Telephone number (11 digits and 333-333-3334)
+        </p>
+
+        <label for="bio">Your bio</label>
+        <input type="text" id="bio" />
+        <p class="bio-error">
+          Bio must contain only lowercase letters, underscores, hyphens and be 8
+          - 50 characters
+        </p>
+        <button class="btn-submit">Submit</button>
+        <p class="success-msg">Sign up completed!</p>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
